@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<!-- Add some meta tags for good SEO -->
+    	<meta name="description" content="Happy Hour App">
+		<meta name="keywords" content="happy hour, parks, lakes">
+		
+		<!--Css-->
+		<link rel="stylesheet" href="style.css">
+
+	
+		<title>Happy Hour</title>
+	</head>
+	<body>
+		<div id="container">
+			
+			<div id="header">
+				<h1>How about going to</h1>
+			</div><!--#header-->
+			<h6 id="action">
+	
+			<h6>
+
+		</div><!-- #container --> 
+		
+		<script>
+			var places = [
+				'Tata Zoological Park',
+                'Nicco Jubliee Park',
+                'Dimna Lake',
+				'Dalma Hill Top',
+				'Chandil Dam',
+				'Jadugora Hill Top',
+				'Rankini Mandir',
+				'Bhatia Park',
+				'Dalma Wildlife Sanctuary'
+                ];
+			var randomNumber = Math.floor(Math.random()*places.length);
+			var placename = places[randomNumber];
+
+
+			var map = "<iframe width='425' height='350' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?ie=UTF8&amp;q=" + placename +  "&amp;fb=1&amp;gl=us&amp;hq=" + placename + "&amp;spn=0.006295,0.006295&amp;output=embed'></iframe>";
+            
+            document.getElementById("action").innerHTML = placename + map;
+
+			
+			</script>
+	</body>
+</html>
