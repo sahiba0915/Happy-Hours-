@@ -45,6 +45,7 @@ body {
            body{
                background: #000;
                opacity: 0.8;
+	       align-items: center;
            }
 
            #container {
